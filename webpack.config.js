@@ -17,16 +17,19 @@ module.exports = {
         test: /\.module\.s(a|c)ss$/,
         use: [
           {loader: 'style-loader'},
-          {
-            loader: 'css-loader'},
+          {loader: 'css-loader'},
           {loader: 'sass-loader'}
         ]
+      },
+      {
+        test: /\.png/,
+        type: 'asset/resource'
       }
     ]
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public/bundle')
+    path: path.resolve(__dirname, 'public')
   },
   devServer: {
     static: './public',
