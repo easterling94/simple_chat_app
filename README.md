@@ -1,3 +1,3 @@
-Аналог CRA.
+React App без использования CRA
 
-Поддержка Typescript, Webpack, React, SASS.
+Технологии: Webpack, Typescript, React, SASS
